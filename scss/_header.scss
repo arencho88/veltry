@@ -78,13 +78,13 @@
 		&-link {
 			letter-spacing: 4px;
 			font-weight: 500;
-			color: #242424;
+			color: $main-color;
 			text-transform: uppercase;
 			text-decoration: none;
 		}
 	}
 	&__slogan {
-		margin: 0 0 26px;
+		margin: 0 0 16px;
 
 		font-size: 35px;
 		text-align: center;
