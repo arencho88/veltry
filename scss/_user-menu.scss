@@ -1,0 +1,39 @@
+.user-menu {
+	max-width: 378px;
+
+	position: absolute;
+	top: 31px;
+	right: 0;
+	&__list {
+		@include reset-list;
+
+		display: flex;
+		flex-wrap: wrap;
+
+		margin: 0 0 0 -62px;
+	}
+	&__item {
+		width: 48px;
+		height: 48px;
+		margin: 0 0 0 62px;
+	}
+	&__icon {
+		width: 48px;
+		height: 48px;
+		padding: 0;
+		border: none;
+
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: 48px 48px;
+
+		cursor: pointer;
+	}
+	&__icon--search {
+		background-image: url(../images/icons/search.png);
+	}
+	&__icon--basket {
+		background-image: url(../images/icons/basket.png);
+	}
+}
