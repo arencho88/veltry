@@ -1,0 +1,99 @@
+.arrivals {
+	&__list {
+		@include reset-list;
+
+		display: flex;
+		flex-wrap: wrap;
+
+		position: relative;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		margin: 0 0 77px;
+		&-img {
+			display: block;
+		}
+		&-info {
+			max-width: 308px;
+			margin: 0 auto;
+
+			font-size: 14px;
+			line-height: 26px;
+			font-weight: 500;
+			color: #343434;
+			text-align: center;
+		}
+		&-name {
+			margin: 0;
+		}
+		&-price {
+			max-width: max-content;
+			margin: 0 auto;
+
+			position: relative;
+
+			font-size: 20px;
+			line-height: 36px;
+			font-weight: 700;
+			&::after {
+				content: '';
+
+				position: absolute;
+				top: 50%;
+				right: -35px;
+				transform: translateY(-50%);
+
+				width: 28px;
+				height: 26px;
+
+				background-image: url(../images/icons/arrivals-basket.png);
+				background-repeat: no-repeat;
+				background-position: center center;
+
+				cursor: pointer;
+			}
+		}
+	}
+	&__item--1 {
+		margin: 0 0 77px 9px;
+		.arrivals__item-img {
+			width: 249px;
+			height: 452px;
+			margin: 0 0 17px 21px;
+		}
+	}
+	&__item--2 {
+		margin: 0;
+
+		position: absolute;
+		top: 0;
+		left: 203px;
+		.arrivals__item-img {
+			margin: 12px 0 21px 0;
+		}
+		.arrivals__item-info {
+			margin: 0 0 0 375px;
+		}
+	}
+	&__item--3 {
+		width: 342px;
+
+		margin-left: 786px;
+		.arrivals__item-img {
+			margin: 35px 0 0 auto;
+		}
+		.arrivals__item-info {
+			max-width: 305px;
+		}
+	}
+	&__item--4 {
+		margin: 0 0 77px 9px;
+	}
+	&__item--6 {
+		.arrivals__item-info {
+			max-width: 295px;
+		}
+	}
+}

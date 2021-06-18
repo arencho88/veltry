@@ -52,12 +52,19 @@ input[type="radio"].visually-hidden {
 } 
 
 .title {
-	margin: 0 0 52px;
+	margin: 0 0 36px;
 
 	font-size: 62px;
 	line-height: 72px;
 	font-weight: 400;
 	letter-spacing: 2px;
+	text-align: center;
 	text-transform: uppercase;
 	color: $main-color;
+}
+.descr {
+	max-width: 887px;
+	margin: 0 auto 47px;
+
+	text-align: center;
 }

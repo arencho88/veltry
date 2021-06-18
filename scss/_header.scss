@@ -82,11 +82,27 @@
 			text-transform: uppercase;
 			text-decoration: none;
 		}
+		&-link--current {
+			position: relative;
+			&::after {
+				content: '';
+
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: -3px;
+
+				height: 2px;
+
+				background-color: #363333;
+			}
+		}
 	}
 	&__slogan {
 		margin: 0 0 16px;
 
 		font-size: 35px;
+		font-weight: 500;
 		text-align: center;
 		letter-spacing: 4px;
 		text-transform: uppercase;

@@ -1,10 +1,12 @@
 .accessories {
+	margin: 0 0 190px;
+
 	position: relative;
 	z-index: 1;
 
 	box-shadow: 0px -2px 0px 0px rgba(255, 255, 255, 1);
 	&__inner {
-		padding: 437px 0 0;
+		padding: 397px 0 0;
 
 		position: relative;
 	}
@@ -27,6 +29,7 @@
 		margin: 0 0 56px;
 
 		font-size: 72px;
+		text-align: left;
 	}
 	&__descr {
 		max-width: 730px;
