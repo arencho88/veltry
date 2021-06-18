@@ -1,0 +1,55 @@
+.camps {
+	&__inner {
+		margin: 0 0 110px;
+	}
+	&__title {
+		margin: 0 0 43px;
+	}
+	&__descr {
+		max-width: 830px;
+		margin: 0 auto 54px;
+	}
+	&__categories {
+		margin: 0 auto 92px;
+	}
+	&__list {
+		@include reset-list;
+
+		display: flex;
+		margin: 0 0 70px;
+	}
+	&__item {
+		background-repeat: no-repeat;
+		&-info {
+			padding: 255px 0 0;
+		}
+	}
+	&__item--1 {
+		width: 437px;
+		margin: 0 0 0 9px;
+
+		background-image: url(../images/content/camp-1.png);
+		.camps__item-info {
+			margin: 0 0 0 20px;
+		}
+	}
+	&__item--2 {
+		width: 476px;
+
+		background-image: url(../images/content/camp-2.png);
+	}
+	&__item--3 {
+		width: 543px;
+
+		background-image: url(../images/content/camp-3.png);
+		.camps__item-info {
+			max-width: 290px;
+		}
+	}
+	&__btn {
+		display: block;
+		max-width: 219px;
+		margin: 0 auto;
+		padding: 9px 77px;
+	}
+}

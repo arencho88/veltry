@@ -37,7 +37,9 @@ input[type="radio"].visually-hidden {
 }
 
 .btn {
+	display: inline-block;
 	padding: 15px 80px;
+	border: none;
 	border-radius: 40px;
 
 	font-size: 24px;
@@ -67,4 +69,44 @@ input[type="radio"].visually-hidden {
 	margin: 0 auto 47px;
 
 	text-align: center;
+}
+.product-info {
+	max-width: 308px;
+	margin: 0 auto;
+
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 500;
+	color: #343434;
+	text-align: center;
+}
+.product-name {
+	margin: 0;
+}
+.product-price {
+	max-width: max-content;
+	margin: 0 auto;
+
+	position: relative;
+
+	font-size: 20px;
+	line-height: 36px;
+	font-weight: 700;
+	&::after {
+		content: '';
+
+		position: absolute;
+		top: 50%;
+		right: -35px;
+		transform: translateY(-50%);
+
+		width: 28px;
+		height: 26px;
+
+		background-image: url(../images/icons/arrivals-basket.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+
+		cursor: pointer;
+	}
 }
