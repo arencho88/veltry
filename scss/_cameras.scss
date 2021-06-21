@@ -1,0 +1,55 @@
+.cameras {
+	&__descr {
+		margin: 0 auto 100px;
+	}
+	&__inner {
+		margin: 0 0 100px;
+	}
+	&__list {
+		@include reset-list;
+
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 0 58px;
+	}
+	&__item {
+		display: flex;
+		padding: 537px 0 0;
+
+		background-repeat: no-repeat;
+		&-info {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+	}
+	&__item--1 {
+		width: 323px;
+		margin: 0 0 0 37px;
+
+		background-image: url(../images/content/camera-1.png);
+	}
+	&__item--2 {
+		width: 450px;
+		margin: 0 0 0 128px;
+
+		background-image: url(../images/content/camera-2.png);
+		background-position: center 21px;
+	}
+	&__item--3 {
+		width: 481px;
+		margin: 0 0 0 23px;
+
+		background-image: url(../images/content/camera-3.png);
+		background-position: center 158px;
+		.cameras__item-info {
+			max-width: 295px;
+		}
+	}
+	&__btn {
+		display: block;
+		max-width: 219px;
+		margin: 0 auto;
+		padding: 9px 77px;
+	}
+}
