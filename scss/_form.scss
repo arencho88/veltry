@@ -1,0 +1,65 @@
+.form {
+	max-width: 1920px;
+	min-height: 1155px;
+	margin: 0 auto;
+	padding: 365px 0 0;
+
+	background-image: url(../images/form-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	&__title {
+		margin: 0 0 36px;
+
+		font-family: 'Algeria One', sans-serif;
+		font-size: 56px;
+		line-height: 72px;
+		color: #fff;
+		&-span {
+			display: block;
+			margin: 15px 0 0;
+
+			font-family: 'Montserrat', sans-serif;
+			font-size: 48px;
+			line-height: 60px;
+			font-weight: 400;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+		}
+	}
+	&__text {
+		max-width: 645px;
+		margin: 0 0 55px;
+
+		font-size: 17px;
+		line-height: 30px;
+		color: #fff;
+	}
+	&__input {
+		padding: 25px 56px 25px 85px;
+		border: none;
+		border-radius: 40px;
+
+		font-size: 18px;
+		color: #696969;
+
+		background-color: #fff;
+		&::placeholder {
+			font-size: 18px;
+			color: #696969;
+		}
+	}
+	&__btn {
+		display: inline-block;
+		margin: 0 0 0 30px;
+		padding: 25px 48px;
+		border: none;
+		border-radius: 40px;
+
+		font-size: 18px;
+		text-transform: uppercase;
+		color: #fff;
+
+		background-color: #3acdd5;
+	}
+}

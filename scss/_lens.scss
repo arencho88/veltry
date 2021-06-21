@@ -1,4 +1,5 @@
 .lens {
+	margin: 0 0 25px;
 	&__descr {
 		margin: 0 auto 70px;
 	}
@@ -9,7 +10,6 @@
 		flex-wrap: wrap;
 	}
 	&__item {
-		// display: flex;
 		width: 630px;
 		padding: 331px 0 0;
 		margin: 0 0 30px;
