@@ -1,0 +1,74 @@
+.footer {
+	padding: 32px 0 0;
+	&__inner {
+		display: flex;
+		margin: 0 0 144px;
+	}
+	&__box {
+		margin: 0 0 20px;
+	}
+	&__about {
+		margin: 0 0 20px 190px;
+	}
+	&__help {
+		margin-left: auto;
+	}
+	&__title {
+		margin: 0 0 10px;
+
+		font-size: 42px;
+		line-height: 52px;
+		font-weight: 500;
+		color: #000;
+	}
+	&__list {
+		@include reset-list;
+
+		font-size: 30px;
+		line-height: 54px;
+		color: #000;
+	}
+	&__link {
+		color: #000;
+		text-decoration: none;
+	}
+	&__soc {
+		max-width: 364px;
+		margin: 25px auto 100px;
+		&-list {
+			@include reset-list;
+
+			display: flex;
+			margin: 0 0 0 -21px;
+		}
+		&-item {
+			width: 56px;
+			height: 56px;
+			margin: 0 0 0 21px;
+
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: 56px 56px;
+		}
+		&-item--fb {
+			background-image: url(../images/icons/fb.png);
+		}
+		&-item--insta {
+			background-image: url(../images/icons/insta.png);
+		}
+		&-item--twitter {
+			background-image: url(../images/icons/twitter.png);
+		}
+		&-item--google {
+			background-image: url(../images/icons/google.png);
+		}
+		&-item--linkedin {
+			background-image: url(../images/icons/linkedin.png);
+		}
+		&-link {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
