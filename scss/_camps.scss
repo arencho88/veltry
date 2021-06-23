@@ -16,9 +16,13 @@
 		@include reset-list;
 
 		display: flex;
-		margin: 0 0 70px;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0 0 40px;
 	}
 	&__item {
+		margin: 0 0 30px;
+
 		background-repeat: no-repeat;
 		&-info {
 			padding: 255px 0 0;

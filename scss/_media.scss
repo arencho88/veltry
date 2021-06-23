@@ -1,0 +1,721 @@
+@media (max-width: 1900px) {
+	.header {
+		min-height: 950px;
+		&::before {
+			display: none;
+		}
+		&__inner {
+			&::after {
+				display: none;
+			}
+		}
+		&__people-bg {
+			width: 600px;
+			height: 800px;
+
+			background-size: 600px auto;
+		}
+	}
+
+	.page-title {
+		font-size: 130px;
+		text-align: center;
+	}
+}
+
+
+
+
+@media (max-width: 1600px) {
+	.page-title {
+		font-size: 110px;
+	}
+}
+
+
+
+
+@media (max-width: 1500px) {
+	.header {
+		&__people-bg {
+			display: none;
+		}
+	}
+
+	.arrivals {
+		&__list {
+			justify-content: center;
+		}
+		&__item {
+			margin: 0 0 77px;
+		}
+		&__item--2 {
+			position: static;
+		}
+		&__item--4 {
+			margin-left: 206px;
+		}
+	}
+
+	.cameras {
+		&__list {
+			justify-content: center;
+		}
+	}
+}
+
+
+
+
+@media (max-width: 1360px) {
+	.lens {
+		&__item {
+			width: 100%;
+			margin: 0 0 30px;
+		}
+	}
+
+	.footer {
+		&__inner {
+			flex-wrap: wrap;
+		}
+		&__box {
+			width: 50%;
+			margin: 0 0 30px;
+		}
+	}
+}
+
+
+
+
+@media (max-width: 1200px) {
+	.header {
+		min-height: 800px;
+		&::after {
+			height: 250px;
+		}
+		&__menu {
+			&-list {
+				margin: 0 0 0 -40px;
+			}
+			&-item {
+				margin: 0 0 0 40px;
+			}
+		}
+	}
+
+	.accessories {
+		margin: 0 0 130px;
+	}
+
+	.camps {
+		&__item--1 {
+			margin: 0 0 30px;
+			.camps__item-info {
+				margin: 0 auto;
+			}
+		}
+	}
+
+	.cameras {
+		&__item {
+			width: 50%;
+			margin: 0 0 20px;
+
+			background-position: center 0;
+		}
+		&__item--3 {
+			width: 100%;
+
+			background-position: center center;
+		}
+	}
+}
+
+
+
+
+@media (max-width: 900px) {
+	.header {
+		&__nav {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 0 30px;
+		}
+		&__nav--closed {
+			.header__nav-burger {
+				display: block;
+				&::before {
+					content: '';
+
+					position: absolute;
+					top: 0;
+					left: 0;
+
+					width: 100%;
+					height: 2px;
+
+					background-color: #000;
+					box-shadow: 0 10px 0 0 #000, 0 20px 0 0 #000;
+				}
+			}
+			.header__menu {
+				display: none;
+			}
+		}
+		&__nav--opened {
+			.header__nav-burger {
+				display: block;
+				&::before,
+				&::after {
+					content: '';
+
+					position: absolute;
+					top: 50%;
+					left: 0;
+
+					width: 100%;
+					height: 2px;
+
+					background-color: #000;
+				}
+				&::before {
+					transform: rotate(45deg);
+				}
+				&::after {
+					transform: rotate(-45deg);
+				}
+			}
+			.header__menu {
+				display: block;
+				width: 100%;
+				&-list {
+					display: block;
+					margin: 0;
+				}
+				&-item {
+					margin: 0 0 20px;
+				}
+			}
+		}
+		&__slogan {
+			margin: 0;
+
+			font-size: 32px;
+		}
+	}
+	.logo {
+		width: auto;
+		margin: 0 0 47px;
+		&__img {
+			width: 200px;
+		}
+	}
+	.user-menu {
+		position: static;
+
+		margin-left: auto;
+		&__list {
+			margin: 0 0 0 -20px;
+		}
+		&__item {
+			width: 35px;
+			height: 35px;
+			margin: 0 0 0 20px;
+		}
+		&__icon {
+			width: 35px;
+			height: 35px;
+
+			background-size: 35px 35px;
+		}
+	}
+
+	.page-title {
+		font-size: 90px;
+	}
+
+	.accessories {
+		&__slogan {
+			font-size: 60px;
+			line-height: 68px;
+		}
+	}
+
+	.title {
+		font-size: 60px;
+		line-height: 68px;
+	}
+
+	.arrivals {
+		&__item--1 {
+			.arrivals__item-img {
+				margin: 0 auto 17px;
+			}
+		}
+		&__item--2 {
+			.arrivals__item-img {
+				width: 600px;
+				height: auto;
+				margin: 0 auto 17px;
+			}
+			.arrivals__item-info {
+				margin: 0 auto;
+			}
+		}
+		&__item--3 {
+			width: 407px;
+			.arrivals__item-img {
+				margin: 0 auto 17px;
+			}
+		}
+		&__item--4 {
+			margin: 0 0 77px;
+		}
+		&__item-img {
+			margin: 0 auto 17px;
+		}
+		&__item-info {
+			margin: 0 auto;
+		}
+	}
+
+	.cameras {
+		&__item {
+			width: 100%;
+		}
+	}
+
+	.lens {
+		&__item {
+			margin: 0 0 60px;
+			padding: 240px 0 0;
+
+			background-size: 500px auto;
+		}
+		&__item--3 {
+			padding: 270px 0 0;
+		}
+	}
+
+	.form {
+		min-height: 1060px;
+		padding: 300px 0 0;
+	}
+
+	.footer {
+		&__box {
+			width: 100%;
+		}
+	}
+}
+
+
+
+
+@media (max-width: 740px) {
+	body {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	.header {
+		&__nav--opened {
+			.header__menu {
+				&-item {
+					margin: 0 0 15px;
+				}
+			}
+		}
+		&__slogan {
+			font-size: 28px;
+			line-height: 32px;
+		}
+	}
+
+	.page-title {
+		font-size: 76px;
+  	}
+
+	.accessories {
+		margin: 0;
+		&__slogan {
+			font-size: 48px;
+			line-height: 58px;
+		}
+	}
+
+	.title {
+		font-size: 48px;
+		line-height: 58px;
+	}
+
+	.arrivals {
+		&__item--1 {
+			.arrivals__item-img {
+				width: 150px;
+				height: auto;
+			}
+		}
+		&__item--2 {
+			.arrivals__item-img {
+				width: 450px;
+			}
+		}
+		&__item--3 {
+			.arrivals__item-img {
+				width: 230px;
+			}
+		}
+		&__item--4 {
+			.arrivals__item-img {
+				width: 300px;
+			}
+		}
+		&__item--5 {
+			.arrivals__item-img {
+				width: 420px;
+			}
+		}
+		&__item--6 {
+			.arrivals__item-img {
+				width: 300px;
+			}
+		}
+	}
+
+	.camps {
+		&__inner {
+			margin: 0 0 80px;
+		}
+		&__categories {
+			margin: 0 auto 60px;
+		}
+		&__item {
+			width: 450px;
+		}
+		&__item--2 {
+			background-size: 470px auto;
+		}
+		&__item--3 {
+			background-size: 470px auto;
+		}
+	}
+
+	.cameras {
+		&__inner {
+			margin: 0 0 80px;
+		}
+		&__descr {
+			margin: 0 auto 60px;
+		}
+	}
+
+	.lens {
+		&__descr {
+			margin: 0 auto 40px;
+		}
+		&__btn {
+			margin: 0 auto;
+		}
+	}
+
+	.form {
+		&__title {
+			font-size: 44px;
+			line-height: 54px;
+			&-span {
+				margin: 5px 0 0;
+
+				font-size: 42px;
+    			line-height: 52px;
+			}
+		}
+		&__text {
+			font-size: 20px;
+    		line-height: 28px;
+		}
+		&__input {
+			margin: 0 0 20px;
+		}
+		&__btn {
+			display: block;
+			margin: 0;
+		}
+	}
+
+	.footer {
+		padding: 0;
+		&__inner {
+			margin: 0 0 110px;
+		}
+		&__title {
+			font-size: 36px;
+			line-height: 46px;
+		}
+		&__list {
+			font-size: 26px;
+    		line-height: 46px;
+		}
+	}
+}
+
+@media (max-width: 540px) {
+	.categories {
+		max-width: 364px;
+		&__list {
+			margin: 0 0 0 -25px;
+		}
+		&__item {
+			margin: 0 0 0 25px;
+
+			font-size: 26px;
+		}
+	}
+
+	.camps {
+		&__list {
+			margin: 0 0 20px;
+		}
+		&__item {
+			width: 350px;
+			&-info {
+				padding: 205px 0 0;
+			}
+		}
+		&__item--1 {
+			background-size: 355px auto;
+		}
+		&__item--2 {
+			background-size: 350px auto;
+		}
+		&__item--3 {
+			background-size: 355px auto;
+		}
+	}
+
+	.cameras {
+		&__list {
+			margin: 0;
+		}
+		&__item {
+			margin: 0 0 60px;
+		}
+		&__item--1 {
+			padding: 510px 0 0;
+
+			background-size: 300px auto;
+		}
+		&__item--2 {
+			padding: 365px 0 0;
+
+			background-size: 300px auto;
+		}
+		&__item--3 {
+			padding: 222px 0 0;
+
+			background-size: 290px auto;
+			background-position: center 0;
+		}
+	}
+
+	.lens {
+		&__item {
+			padding: 150px 0 0;
+
+			background-size: 290px auto;
+		}
+		&__item--3 {
+			padding: 175px 0 0;
+		}
+	}
+
+	.form {
+		min-height: 1290px;
+		&__title {
+			font-size: 36px;
+    		line-height: 46px;
+			&-span {
+				font-size: 32px;
+    			line-height: 42px;
+			}
+		}
+		&__input {
+			display: block;
+			width: 100%;
+			padding: 25px;
+		}
+		&__btn {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 440px) {
+	.header {
+		min-height: 680px;
+		&__slogan {
+			font-size: 24px;
+		}
+	}
+
+	.page-title {
+		font-size: 54px;
+  	}
+
+	.accessories {
+		&__slogan {
+			font-size: 32px;
+    		line-height: 36px;
+		}
+		&__btn {
+			padding: 16px 30px;
+		}
+	}
+
+	.title {
+		font-size: 32px;
+		line-height: 42px;
+	}
+
+	.btn {
+		font-size: 18px;
+	}
+
+	.categories {
+		max-width: 280px;
+		&__list {
+			margin: 0 0 0 -20px;
+		}
+		&__item {
+			margin: 0 0 0 20px;
+
+			font-size: 20px;
+		}
+	}
+
+	.arrivals {
+		&__item--1 {
+			.arrivals__item-img {
+				width: 100px;
+			}
+		}
+		&__item--2 {
+			.arrivals__item-img {
+				width: 290px;
+			}
+		}
+		&__item--3 {
+			.arrivals__item-img {
+				width: 150px;
+			}
+		}
+		&__item--4 {
+			.arrivals__item-img {
+				width: 180px;
+			}
+		}
+		&__item--5 {
+			.arrivals__item-img {
+				width: 260px;
+			}
+		}
+		&__item--6 {
+			.arrivals__item-img {
+				width: 200px;
+			}
+		}
+	}
+
+	.camps {
+		&__inner {
+			margin: 0 0 60px;
+		}
+		&__item {
+			width: 290px;
+			&-info {
+				padding: 180px 0 0;
+			}
+		}
+		&__item--1 {
+			background-size: 288px auto;
+		}
+		&__item--2 {
+			background-size: 290px auto;
+		}
+		&__item--3 {
+			background-size: 290px auto;
+		}
+		&__btn {
+			max-width: 150px;
+			padding: 9px 0;
+
+			text-align: center;
+		}
+	}
+
+	.cameras {
+		&__inner {
+			margin: 0 0 60px;
+		}
+		&__btn {
+			max-width: 150px;
+			padding: 9px 0;
+
+			text-align: center;
+		}
+	}
+
+	.lens {
+		&__btn {
+			max-width: 150px;
+			padding: 9px 0;
+
+			text-align: center;
+		}
+	}
+
+	.footer {
+		&__soc {
+			margin: 0 auto 30px;
+			&-item {
+				width: 40px;
+				height: 40px;
+
+				background-size: 40px 40px;
+			}
+		}
+	}
+}
+
+@media (max-width: 380px) {
+	body {
+		font-size: 16px;
+		line-height: 24px;
+	}
+
+	.logo {
+		&__img {
+			width: 160px;
+		}
+	}
+
+	.title {
+		font-size: 28px;
+	}
+
+	.footer {
+		&__inner {
+			margin: 0 0 60px;
+		}
+		&__title {
+			font-size: 32px;
+    		line-height: 42px;
+		}
+		&__list {
+			font-size: 22px;
+    		line-height: 42px;
+		}
+	}
+}
